@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-default {
+    background-color: #4682B4;
+}
+
+.navbar-default .navbar-brand {
+    font-size: 20px;    
+}
+
+.navbar-default .navbar-brand , .navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: brown;
+    color: white;    
+}
+
+.author-name {
+    color: #00BFFF;
+    font-size: 16px;
+    padding-right: 15px;
+}
+
+.publish-date {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.post, main {
+    background-color: #F0FFF0;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #DCDCDC;
+}
+
+hr {
+    margin: 5px 0;
+    border-color: #DCDCDC;
+}
+.post-content {
+    text-align: justify;
+    font-size: 14px;
+}
+
+main {
+    padding-bottom: 6px;
+}
+
+main h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    word-spacing: 3px;
+}
+main span {
+    font-size: 14px;
+    padding-right: 15px;
+}
+main .item {
+    margin-top: 25px;
+}
+main .item p {
+    padding: 10px;
+    border: 1px solid  #DCDCDC;
+    margin: 0;
+    border-bottom: none;
+}
+main .item p:nth-child(4) {
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.form-div {
+    margin-top: 10px;
+    border: 1px solid #DCDCDC;
+    padding: 20px;
+    background-color: #F0FFF0;
+}
+
+.form-div legend {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.existing-account {
+    text-align: center;
+}
