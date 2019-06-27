@@ -1,9 +1,16 @@
 from flask import Flask, render_template, flash, redirect
 from forms import RegistrationForm, LoginForm
+from flask_sqlalchemy import SQLAlchemy
+
 
 app = Flask(__name__)
 
 app.config["SECRET_KEY"] = "1f157c192086567f577cc2fe83a45091"
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///site.db"
+
+db = SQLAlchemy(app=app)
+
+from models import User, Post
 
 # This is list of dictionary of posts
 posts = [

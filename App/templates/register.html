@@ -14,7 +14,7 @@
                             {{ form.username.label(class="control-label") }}
                             {% if form.username.errors %}
                                 <div class="form-group has-error">
-                                    {{ form.username(class="form-control") }}
+                                    {{ form.username(class="form-control", placeholder="Type User Name") }}
                                     <div class="help-block">
                                         {% for error in form.username.errors %}
                                             <span>{{ error }}</span>
@@ -22,7 +22,7 @@
                                     </div>
                                 </div>
                             {% else %}
-                                {{ form.username(class="form-control") }}
+                                {{ form.username(class="form-control", placeholder="Type User Name") }}
                             {% endif %}
 
                         </div>
@@ -31,7 +31,7 @@
                             {{ form.email.label(class="control-label") }}
                             {% if form.username.errors %}
                                 <div class="form-group has-error">
-                                    {{ form.email(class="form-control") }}
+                                    {{ form.email(class="form-control", placeholder="Enter your Email") }}
                                     <div class="help-block">
                                         {% for error in form.email.errors %}
                                             <span>{{ error }}</span>
@@ -39,7 +39,7 @@
                                     </div>
                                 </div>
                             {% else %}
-                                {{ form.email(class="form-control") }}
+                                {{ form.email(class="form-control", placeholder="Enter your Email") }}
                             {% endif %}
                         </div>
 
