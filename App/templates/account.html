@@ -1,0 +1,88 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+    <div class="container">
+        &nbsp;
+        <div class="row user-account">
+            <div class="col-sm-offset-1 col-sm-4">
+                <div class="thumbnail user-picture" style="border: none; ">
+                    <img src="{{ image_file }}" alt="user_image" class="img-circle img-responsive">
+                    <div>
+                        <h2 class="h4">{{ current_user.username }}</h2>
+                        <p class="text-warning">{{ current_user.email }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-div col-sm-6 ">
+                    <form action="" method="post" enctype="multipart/form-data">
+                        {{ form.hidden_tag() }}
+
+                        <fieldset class="form-group">
+                            <legend>Account Info</legend>
+
+                            <div class="form-group">
+                                {{ form.username.label(class="control-label") }}
+                                {% if form.username.errors %}
+                                    <div class="form-group has-error">
+                                        {{ form.username(class="form-control", placeholder="Type User Name") }}
+                                        <div class="help-block">
+                                            {% for error in form.username.errors %}
+                                                <span>{{ error }}</span>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                {% else %}
+                                    {{ form.username(class="form-control", placeholder="Type User Name") }}
+                                {% endif %}
+
+                            </div>
+
+                            <div class="form-group">
+                                {{ form.email.label(class="control-label") }}
+                                {% if form.username.errors %}
+                                    <div class="form-group has-error">
+                                        {{ form.email(class="form-control", placeholder="Enter your Email") }}
+                                        <div class="help-block">
+                                            {% for error in form.email.errors %}
+                                                <span>{{ error }}</span>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                {% else %}
+                                    {{ form.email(class="form-control", placeholder="Enter your Email") }}
+                                {% endif %}
+                            </div>
+
+                            <div class="form-group">
+                                {{ form.picture.label() }}
+                                {{ form.picture(class="") }}
+
+                                {% if form.picture.errors %}
+                                    {% for error in form.picture.errors %}
+                                        <span class="text-danger">{{ error }}</span><br>
+                                    {% endfor %}
+
+                                {% endif %}
+
+                            </div>
+
+                            <div class="form-group">
+                                {{ form.submit(class="btn btn-success") }}
+                            </div>
+
+                        </fieldset>
+
+
+                    </form>
+
+                    <p class="existing-account">
+                        <small>Already Have An Account?</small>
+                        <a href="{{ url_for('login') }}">Sign in</a>
+                    </p>
+                </div>
+        </div>
+    </div>
+
+
+{% endblock content %}
+

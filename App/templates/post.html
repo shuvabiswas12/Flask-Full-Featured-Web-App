@@ -1,0 +1,82 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+    <section id="blog-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="post">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="">
+                                    <img src="{{ url_for('static', filename='css/profile_pic/' + post.author.img_file) }}"
+                                         alt="..." class="img-circle img-rounded img-responsive">
+                                </div>
+                            </div>
+                            <div class="col-sm-10">
+                                <span class="author-name">{{ post.author.username }} </span>
+                                <span class="publish-date">{{ post.date_posted.strftime('%Y-%m-%d') }}</span>
+                                <hr>
+                                <h2 class="post-title">
+                                    {{ post.title }}
+                                </h2>
+                                <p class="post-content">{{ post.content }}</p>
+                                {% if post.author == current_user %}
+
+                                    <div>
+                                        <a class="btn btn-info btn-sm"
+                                           href="{{ url_for('update_post', post_id=post.id) }}">Update</a>
+                                        <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                                data-target="#deleteModal">Delete
+                                        </button>
+                                    </div>
+
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <main>
+                        <h3>Our Sidebar</h3>
+                        <span>You can put any information here you'd like</span>
+                        <div class="item">
+                            <p>Latest Posts</p>
+                            <p>Announcements</p>
+                            <p>Calender</p>
+                            <p>Etc</p>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>}
+
+
+    {# bootstrap3.3.7 modal #}
+    <!-- Modal -->
+    <div class="modal fade" id="deleteModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Delete post?</h4>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <p>&nbsp;</p>
+                    <form action="{{ url_for('delete_post', post_id=post.id) }}" method="post">
+                        <input type="submit" class="btn btn-danger btn-sm" value="Delete">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+{% endblock %}
