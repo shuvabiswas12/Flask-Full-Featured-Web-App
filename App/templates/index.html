@@ -13,11 +13,11 @@
                                          alt="..." class="img-rounded img-circle img-responsive">
                                 </div>
                                 <div class="col-sm-10">
-                                    <span class="author-name"><a href="{{ url_for('user_posts', username=post.author.username) }}">{{ post.author.username }}</a></span>
+                                    <span class="author-name"><a href="{{ url_for('users.user_posts', username=post.author.username) }}">{{ post.author.username }}</a></span>
                                     <span class="publish-date">{{ post.date_posted.strftime('%Y-%m-%d') }}</span>
                                     <hr>
                                     <h2 class="post-title">
-                                        <a href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a>
+                                        <a href="{{ url_for('posts.post', post_id=post.id) }}">{{ post.title }}</a>
                                     </h2>
                                     <p class="post-content">{{ post.content }}</p>
                                 </div>
@@ -28,9 +28,9 @@
                     {% for page_num in posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
                         {% if page_num %}
                             {% if posts.page == page_num %}
-                                <a class="btn btn-info" href="{{ url_for('home', page=page_num) }}">{{ page_num }}</a>
+                                <a class="btn btn-info" href="{{ url_for('main.home', page=page_num) }}">{{ page_num }}</a>
                             {% else %}
-                                <a class="btn btn-danger" href="{{ url_for('home', page=page_num) }}">{{ page_num }}</a>
+                                <a class="btn btn-danger" href="{{ url_for('main.home', page=page_num) }}">{{ page_num }}</a>
                             {% endif %}
                         {% else %}
                             '''

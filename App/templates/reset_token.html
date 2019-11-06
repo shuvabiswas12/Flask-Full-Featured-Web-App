@@ -8,24 +8,7 @@
                     {{ form.hidden_tag() }}
 
                     <fieldset class="form-group">
-                        <legend>Sign In</legend>
-
-                        <div class="form-group">
-                            {{ form.email.label(class="control-label") }}
-                            {% if form.email.errors %}
-                                <div class="form-group has-error">
-                                    {{ form.email(class="form-control") }}
-                                    <div class="help-block">
-                                        {% for error in form.email.errors %}
-                                            <span>{{ error }}</span>
-                                        {% endfor %}
-                                    </div>
-                                </div>
-                            {% else %}
-                                {{ form.email(class="form-control") }}
-                            {% endif %}
-                        </div>
-
+                        <legend>Reset Password</legend>
 
                         <div class="form-group">
                             {{ form.password.label(class="control-label") }}
@@ -41,14 +24,22 @@
                             {% else %}
                                 {{ form.password(class="form-control") }}
                             {% endif %}
-
                         </div>
 
-                        <div class="checkbox">
-                            <label>
-                                {{ form.remember(class="checkbox") }}
-                                {{ form.remember.label }}
-                            </label>
+                        <div class="form-group">
+                            {{ form.confirm_password.label(class="control-label") }}
+                            {% if form.confirm_password.errors %}
+                                <div class="form-group has-error">
+                                    {{ form.confirm_password(class="form-control") }}
+                                    <div class="help-block">
+                                        {% for error in form.confirm_password.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            {% else %}
+                                {{ form.confirm_password(class="form-control") }}
+                            {% endif %}
                         </div>
 
                         <div class="form-group">
@@ -60,14 +51,6 @@
 
                 </form>
 
-                <p class="existing-account">
-                    <a href="{{ url_for('users.reset_request') }}">Forgot Password?</a>
-                </p>
-
-                <p class="existing-account">
-                    <small>Need An Account?</small>
-                    <a href="{{ url_for('users.register') }}">Register</a>
-                </p>
             </div>
 
         </div>

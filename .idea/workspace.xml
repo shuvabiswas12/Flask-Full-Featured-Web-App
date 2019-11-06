@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04e7e830-914f-40f4-95ab-fe8f87ae93d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/site.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/static/css/profile_pic/default.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/templates/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Full Featured Web Application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Full Featured Web Application.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/forms.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/App/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/route.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/route.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/App/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/route.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/App/site.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/templates/account.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/templates/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/templates/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/templates/user_posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/templates/user_posts.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,8 +49,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -60,6 +58,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1QHfoU8yVjlW9DPLM8m9PLayQ9O" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql&#10;sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -90,7 +91,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.run">
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Full Featured Web Application" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Full Featured Web Application" type="Python.FlaskServer">
       <module name="Full Featured Web Application" />
       <option name="target" value="$PROJECT_DIR$/App/route.py" />
@@ -106,6 +129,11 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.run" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
@@ -167,6 +195,10 @@
       <workItem from="1572532503928" duration="5987000" />
       <workItem from="1572621162029" duration="674000" />
       <workItem from="1572663143758" duration="10066000" />
+      <workItem from="1572838336643" duration="281000" />
+      <workItem from="1572838774420" duration="11689000" />
+      <workItem from="1572921804869" duration="8402000" />
+      <workItem from="1573008344794" duration="1003000" />
     </task>
     <servers />
   </component>
@@ -187,6 +219,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Full_Featured_Web_Application$Full_Featured_Web_Application.coverage" NAME="Full Featured Web Application Coverage Results" MODIFIED="1572677116997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Full_Featured_Web_Application$Full_Featured_Web_Application.coverage" NAME="Full Featured Web Application Coverage Results" MODIFIED="1572853053006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Full_Featured_Web_Application$run.coverage" NAME="run Coverage Results" MODIFIED="1572932243127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

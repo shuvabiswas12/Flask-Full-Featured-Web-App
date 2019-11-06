@@ -25,7 +25,7 @@
 
                                     <div>
                                         <a class="btn btn-info btn-sm"
-                                           href="{{ url_for('update_post', post_id=post.id) }}">Update</a>
+                                           href="{{ url_for('posts.update_post', post_id=post.id) }}">Update</a>
                                         <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
                                                 data-target="#deleteModal">Delete
                                         </button>
@@ -68,7 +68,7 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     <p>&nbsp;</p>
-                    <form action="{{ url_for('delete_post', post_id=post.id) }}" method="post">
+                    <form action="{{ url_for('posts.delete_post', post_id=post.id) }}" method="post">
                         <input type="submit" class="btn btn-danger btn-sm" value="Delete">
                     </form>
                 </div>
